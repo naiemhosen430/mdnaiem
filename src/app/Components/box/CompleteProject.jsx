@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdOutlineDownloadDone } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -23,8 +22,6 @@ export default function CompleteProject({
   useEffect(() => {
     setOptions(optionsp);
   }, [optionsp]);
-
-  console.log(options);
 
   return (
     <>
@@ -53,9 +50,7 @@ export default function CompleteProject({
                     <span
                       className="text-2xl inline-block"
                       data-aos="fade-left"
-                    >
-                      <MdOutlineDownloadDone />
-                    </span>
+                    ></span>
                     <span className="w-11/12 block" data-aos="fade-right">
                       {item}
                     </span>
