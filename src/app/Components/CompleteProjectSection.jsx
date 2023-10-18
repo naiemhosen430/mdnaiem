@@ -26,7 +26,13 @@ export default function CompleteProjectSection() {
       <CompleteProject
         image={""}
         link={"https://top-ranking.vercel.app"}
-        optionsp={["Profile", "friend"]}
+        optionsp={[
+          "Profile",
+          "Add Question",
+          "Answer Question",
+          "Ranking",
+          "Feed",
+        ]}
         name={"Top-Ranking"}
         header={
           "Top_Ranking is a platform where you can test yourself by answering short question. it will help you to rank on the world. However i have developed it by next js and node js. As Database i have used mongoDb."
