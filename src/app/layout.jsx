@@ -13,8 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Menu />
-        {children}
+        <div className="w-screen overflow-x-hidden">
+          <Menu />
+          {children}
+        </div>
       </body>
     </html>
   );

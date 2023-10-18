@@ -25,6 +25,14 @@ export default function MySkills() {
         </h1>
         <div className="text-center">
           <MiniBox
+            HeaderName={"HTML, CSS"}
+            description={"I am working with MongoDB for last 1 year."}
+          />
+          <MiniBox
+            HeaderName={"Tailwind css"}
+            description={"I am working with MongoDB for last 1 year."}
+          />
+          <MiniBox
             HeaderName={"JavaScript"}
             description={"I am working with JavaScript for last 1 year."}
           />
@@ -35,14 +43,6 @@ export default function MySkills() {
           <MiniBox
             HeaderName={"Node js"}
             description={"I am working with Node js for last 1 year."}
-          />
-          <MiniBox
-            HeaderName={"MongoDB"}
-            description={"I am working with MongoDB for last 1 year."}
-          />
-          <MiniBox
-            HeaderName={"MongoDB"}
-            description={"I am working with MongoDB for last 1 year."}
           />
           <MiniBox
             HeaderName={"MongoDB"}

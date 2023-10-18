@@ -14,8 +14,8 @@ export default function Menu() {
   };
   return (
     <>
-      <div className="p-4 sticky top-0 flex justify-center items-center z-10 bg-slate-900 shadow-md">
-        <div className="text-2xl text-white lg:text-center font-bold w-10/12 lg:w-2/12">
+      <div className="sticky p-5 top-1 flex justify-center items-center z-10 bg-slate-900 shadow-md">
+        <div className="text-2xl text-white lg:text-center font-bold w-9/12 lg:w-2/12">
           <h1>MD Naiem</h1>
         </div>
         <div className="lg:w-10/12 hidden lg:block text-center">
@@ -64,7 +64,7 @@ export default function Menu() {
             </Link>
           </ul>
         </div>
-        <div onClick={toggleMenu} className="lg:hidden w-2/12 text-right">
+        <div onClick={toggleMenu} className="lg:hidden w-2/12 text-center">
           <button className="block py-2 px-4 rounded-md hover:bg-slate-700 bg-slate-800">
             Menu
           </button>
