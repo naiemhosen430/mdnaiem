@@ -29,25 +29,13 @@ export default function Menu() {
               About Me
             </Link>
             <Link
-              href={""}
+              href={"/project"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
             >
-              My Project
+              Project
             </Link>
             <Link
-              href={""}
-              className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
-            >
-              My Skills
-            </Link>
-            <Link
-              href={""}
-              className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
-            >
-              My Portfolio
-            </Link>
-            <Link
-              href={""}
+              href={"/clientreview"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
             >
               My Client Reviews
@@ -59,7 +47,7 @@ export default function Menu() {
               Github
             </Link>
             <Link
-              href={""}
+              href={"/contract"}
               className="text-white rounded-full border bg-slate-800 border-red-400 py-1 px-10"
             >
               Contract
@@ -85,28 +73,14 @@ export default function Menu() {
             </Link>
             <Link
               onClick={toggleMenu}
-              href={""}
+              href={"/project"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
             >
-              My Project
+              Project
             </Link>
             <Link
               onClick={toggleMenu}
-              href={""}
-              className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
-            >
-              My Skills
-            </Link>
-            <Link
-              onClick={toggleMenu}
-              href={""}
-              className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
-            >
-              My Portfolio
-            </Link>
-            <Link
-              onClick={toggleMenu}
-              href={""}
+              href={"/clientreview"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
             >
               My Client Reviews
@@ -122,7 +96,7 @@ export default function Menu() {
               </Link>
               <Link
                 onClick={toggleMenu}
-                href={""}
+                href={"/contract"}
                 className="text-white w-6/12 m-auto my-5 rounded-full border bg-slate-800 border-red-400 py-1 px-10 block hover:bg-slate-600"
               >
                 Contract
