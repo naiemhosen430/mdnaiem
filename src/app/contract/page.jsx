@@ -3,12 +3,12 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="p-10">
+      <div className="lg:p-10 md:p-5 p-1">
         <h1 className="p-4 text-4xl text-center text-slate-500">
           Send me message!
         </h1>
 
-        <div className="p-10 lg:w-5/12 md:w-8/12 w-12/12 m-auto">
+        <div className="lg:p-10 md:p-5 p-1 lg:w-5/12 md:w-8/12 w-12/12 m-auto">
           <div className="py-2">
             <label
               className="block font-bold text-xl text-slate-400 p-1"
