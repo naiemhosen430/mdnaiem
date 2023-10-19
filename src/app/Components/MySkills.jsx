@@ -26,11 +26,11 @@ export default function MySkills() {
         <div className="text-center">
           <MiniBox
             HeaderName={"HTML, CSS"}
-            description={"I am working with MongoDB for last 1 year."}
+            description={"I am working with HTML, CSS for last 2 year."}
           />
           <MiniBox
             HeaderName={"Tailwind css"}
-            description={"I am working with MongoDB for last 1 year."}
+            description={"I am working with Tailwind css for last 1 year."}
           />
           <MiniBox
             HeaderName={"JavaScript"}

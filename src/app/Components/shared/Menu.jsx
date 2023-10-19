@@ -21,10 +21,10 @@ export default function Menu() {
         <div className="lg:w-10/12 hidden lg:block text-center">
           <ul className="pt-2 space-x-8">
             <Link
-              href={""}
+              href={"/aboutme"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
             >
-              MySelf
+              About Me
             </Link>
             <Link
               href={""}
@@ -54,13 +54,13 @@ export default function Menu() {
               href={""}
               className="text-white rounded-full border bg-slate-500 border-red-400 py-1 px-4"
             >
-              My CV
+              Github
             </Link>
             <Link
               href={""}
               className="text-white rounded-full border bg-slate-800 border-red-400 py-1 px-10"
             >
-              Contract With Me
+              Contract
             </Link>
           </ul>
         </div>
@@ -76,10 +76,10 @@ export default function Menu() {
           <ul className="pt-2 space-y-4">
             <Link
               onClick={toggleMenu}
-              href={""}
+              href={"/aboutme"}
               className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
             >
-              MySelf
+              About Me
             </Link>
             <Link
               onClick={toggleMenu}
@@ -116,14 +116,14 @@ export default function Menu() {
                 href={""}
                 className="text-white w-6/12 m-auto my-5 rounded-full border bg-slate-500 border-red-400 py-1 px-4 block hover:bg-slate-600"
               >
-                My CV
+                Github
               </Link>
               <Link
                 onClick={toggleMenu}
                 href={""}
                 className="text-white w-6/12 m-auto my-5 rounded-full border bg-slate-800 border-red-400 py-1 px-10 block hover:bg-slate-600"
               >
-                Contract With Me
+                Contract
               </Link>
             </div>
           </ul>

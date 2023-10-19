@@ -19,50 +19,22 @@ export default function MyProject() {
             data-aos="fade-up"
             className="border hover:bg-slate-600 border-slate-600 py-2 px-4 border-b-8 border-r-4 rounded-md"
           >
-            My amazing project for you
+            My project for you
           </span>
         </h1>
         <div className="space-2 text-center">
           <ProjectBox
-            projectname={"Diahoo"}
+            projectname={"E-commerce"}
             image={""}
             description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
-            projectname={"Diahoo"}
+            projectname={"E-commerce two"}
             image={""}
             description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
-            }
-          />
-          <ProjectBox
-            projectname={"Diahoo"}
-            image={""}
-            description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
-            }
-          />
-          <ProjectBox
-            projectname={"Diahoo"}
-            image={""}
-            description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
-            }
-          />
-          <ProjectBox
-            projectname={"Diahoo"}
-            image={""}
-            description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
-            }
-          />
-          <ProjectBox
-            projectname={"Diahoo"}
-            image={""}
-            description={
-              "This is a social media platform. it has made by react and node js and i am currently working for it."
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
         </div>
