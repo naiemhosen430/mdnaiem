@@ -16,7 +16,9 @@ export default function Menu() {
     <>
       <div className="sticky p-5 top-1 flex justify-center items-center z-10 bg-slate-900 shadow-md">
         <div className="text-2xl text-white lg:text-center font-bold w-9/12 lg:w-2/12">
-          <h1>MD Naiem</h1>
+          <Link href={"/"}>
+            <h1>MD Naiem</h1>
+          </Link>
         </div>
         <div className="lg:w-10/12 hidden lg:block text-center">
           <ul className="pt-2 space-x-8">

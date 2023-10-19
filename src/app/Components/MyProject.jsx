@@ -37,6 +37,34 @@ export default function MyProject() {
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
+          <ProjectBox
+            projectname={"Agency"}
+            image={""}
+            description={
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+            }
+          />
+          <ProjectBox
+            projectname={"Agency two"}
+            image={""}
+            description={
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+            }
+          />
+          <ProjectBox
+            projectname={"Personal"}
+            image={""}
+            description={
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+            }
+          />
+          <ProjectBox
+            projectname={"App presention"}
+            image={""}
+            description={
+              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+            }
+          />
         </div>
       </div>
     </>
