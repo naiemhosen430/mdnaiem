@@ -41,7 +41,7 @@ export default function Menu() {
               My Client Reviews
             </Link>
             <Link
-              href={""}
+              href={"https://github.com/naiemhosen430"}
               className="text-white rounded-full border bg-slate-500 border-red-400 py-1 px-4"
             >
               Github
@@ -89,7 +89,7 @@ export default function Menu() {
             <div className="text-center py-10">
               <Link
                 onClick={toggleMenu}
-                href={""}
+                href={"https://github.com/naiemhosen430"}
                 className="text-white w-6/12 m-auto my-5 rounded-full border bg-slate-500 border-red-400 py-1 px-4 block hover:bg-slate-600"
               >
                 Github

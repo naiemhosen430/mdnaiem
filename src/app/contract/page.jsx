@@ -3,7 +3,7 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="lg:p-10 md:p-5 p-1">
+      <div className="lg:p-10 md:p-5 p-5">
         <h1 className="p-4 text-4xl text-center text-slate-500">
           Send me message!
         </h1>
