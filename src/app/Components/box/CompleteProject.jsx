@@ -36,12 +36,12 @@ export default function CompleteProject({
           <p className="lg:text-xl text-lg" data-aos="fade-right">
             {header}
           </p>
-          <img
-            data-aos="fade-bottom"
-            className="w-full bg-slate-900 my-5 block h-80"
+          <iframe
             src={image}
-            alt="no image"
-          />
+            height="400"
+            width="100%"
+            frameborder="0"
+          ></iframe>
           <div>
             <div className="w-full">
               {options.map((item) => (
@@ -62,7 +62,7 @@ export default function CompleteProject({
           <Link
             data-aos="fade-up"
             className="block p-2 bg-slate-900 hover:bg-slate-800 rounded-md text-yellow-600 text-center"
-            href={link}
+            href={image}
           >
             Visit {name}
           </Link>

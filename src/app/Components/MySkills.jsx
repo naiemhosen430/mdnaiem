@@ -6,12 +6,6 @@ import React from "react";
 import MiniBox from "./box/MiniBox";
 
 export default function MySkills() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   return (
     <>
       <div className="backdrop-blur-3xl w-10/12 m-auto my-20 p-10">
@@ -34,19 +28,27 @@ export default function MySkills() {
           />
           <MiniBox
             HeaderName={"JavaScript"}
-            description={"I am working with JavaScript for last 1 year."}
+            description={"I am working with JavaScript for last 2 year."}
           />
           <MiniBox
             HeaderName={"React"}
             description={"I am working with React for last 1 year."}
           />
           <MiniBox
+            HeaderName={"Next js"}
+            description={"I am working with MongoDB for last 2 year."}
+          />
+          <MiniBox
             HeaderName={"Node js"}
-            description={"I am working with Node js for last 1 year."}
+            description={"I am working with Node js for last 2 year."}
           />
           <MiniBox
             HeaderName={"MongoDB"}
-            description={"I am working with MongoDB for last 1 year."}
+            description={"I am working with MongoDB for last 2 year."}
+          />
+          <MiniBox
+            HeaderName={"Flutter"}
+            description={"I am working with MongoDB for last less then 1 year."}
           />
         </div>
       </div>

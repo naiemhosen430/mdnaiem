@@ -5,7 +5,7 @@ export default function CompleteProjectSection() {
   return (
     <>
       <CompleteProject
-        image={""}
+        image={"https://diahoo.com/register"}
         link={"https://diahoo.com"}
         optionsp={[
           "Profile",
@@ -24,7 +24,7 @@ export default function CompleteProjectSection() {
         }
       />
       <CompleteProject
-        image={""}
+        image={"https://top-ranking.vercel.app/"}
         link={"https://top-ranking.vercel.app"}
         optionsp={[
           "Profile",

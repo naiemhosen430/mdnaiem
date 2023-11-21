@@ -10,16 +10,17 @@ export default function FullSection({ image, header, description }) {
       once: false,
     });
   }, []);
+
   return (
     <>
       <div
-        className="lg:w-11/12 m-auto bg-slate-800 lg:flex p-10"
+        className="lg:w-11/12 m-auto bg-slate-900 lg:flex p-10"
         data-aos="fade-bottom"
       >
-        <div className="lg:w-6/12" data-aos="fade-left">
+        <div className="lg:w-6/12 p-10" data-aos="fade-left">
           <img src={image} alt="" />
         </div>
-        <div className="lg:w-6/12">
+        <div className="lg:w-6/12 p-10 pt-0">
           <h1
             className="text-3xl py-5 text-white font-bold"
             data-aos="fade-left"

@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Menu from "./Components/shared/Menu";
+import Footer from "./Components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <div className="w-screen overflow-x-hidden">
           <Menu />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

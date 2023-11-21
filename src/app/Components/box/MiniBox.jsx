@@ -4,16 +4,10 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function MiniBox({ HeaderName, description }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   return (
     <>
       <div
-        className="LG:w-4/12 md:W-5/12 m-auto text-left inline-block cursor-pointer p-4"
+        className="lg:w-4/12 md:W-5/12 m-auto text-left inline-block cursor-pointer p-4"
         data-aos="fade-up"
       >
         <div className="hover:bg-slate-800 rounded-md shadow bg-slate-900 p-2">

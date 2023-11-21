@@ -1,18 +1,13 @@
 "use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   return (
     <>
-      <div className="h-screen">
+      <div className="">
         <div className="flex p-10 py-20">
           <div
             className="w-4/12 lg:block hidden m-10 text-center"
@@ -41,21 +36,21 @@ export default function Hero() {
             >
               I am a web developer and programmer
             </p>
-            <div className="lg:flex lg:items-center space-y-4 lg:space-x-4 py-10">
-              <button
+            <div className="lg:flex lg:items-center py-10">
+              <Link
                 data-aos="fade-right"
-                className="text-white lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-2xl border border-yellow-700 rounded-md"
-                type="button"
+                className="text-white m-4 text-center lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-2xl border border-yellow-700 rounded-md"
+                href={"/aboutme"}
               >
                 About Me
-              </button>
-              <button
+              </Link>
+              <Link
                 data-aos="fade-left"
-                className="text-white lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-2xl border border-yellow-700 rounded-md"
-                type="button"
+                className="text-white text-center m-4 lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-2xl border border-yellow-700 rounded-md"
+                href={"/contract"}
               >
-                My Skills
-              </button>
+                Contract
+              </Link>
             </div>
           </div>
         </div>

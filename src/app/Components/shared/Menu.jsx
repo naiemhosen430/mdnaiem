@@ -14,7 +14,7 @@ export default function Menu() {
   };
   return (
     <>
-      <div className="sticky p-5 top-1 flex justify-center items-center z-10 bg-slate-900 shadow-md">
+      <div className="sticky p-5 top-1 flex justify-center items-center w-screen bg-slate-900 shadow-md">
         <div className="text-2xl text-white lg:text-center font-bold w-9/12 lg:w-2/12">
           <Link href={"/"}>
             <h1>MD Naiem</h1>

@@ -25,42 +25,42 @@ export default function MyProject() {
         <div className="space-2 text-center">
           <ProjectBox
             projectname={"E-commerce"}
-            image={""}
+            image={"https://ecommerce-rho-blush.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"E-commerce two"}
-            image={""}
+            image={"https://ecommercenaiem.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Agency"}
-            image={""}
+            image={"https://agencyone.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Agency two"}
-            image={""}
+            image={"https://agencytwo.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Personal"}
-            image={""}
+            image={"https://personal-six-sable.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"App presention"}
-            image={""}
+            image={"https://app-presentation.vercel.app/"}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
