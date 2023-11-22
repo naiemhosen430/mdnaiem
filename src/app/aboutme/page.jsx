@@ -1,6 +1,7 @@
 "use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function page() {
@@ -24,36 +25,65 @@ export default function page() {
           <h2 className="text-slate-500 py-2" data-aos="fade-right">
             From <span className="text-white">Bangladesh</span>
           </h2>
+          <h2 className="text-slate-500 py-2" data-aos="fade-right">
+            Age <span className="text-white">18</span>
+          </h2>
+          <h2 className="text-slate-500 py-2" data-aos="fade-right">
+            Profession <span className="text-white">Proggramer</span>
+          </h2>
         </div>
       </div>
 
       <div className="p-10" data-aos="fade-up">
         <h1 className="text-slate-400 LG:text-2xl p-4 py-10 font-bold text-center">
-          <span
-            className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md"
-            data-aos="fade-right"
-          >
+          <span className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md">
             Study
           </span>
         </h1>
         <p className="text-lg">
-          I am studing at inter first year in Abu Abbas Collage Netrokona. I
+          I am studing at inter secound year in Abu Abbas Collage Netrokona. I
           have completed SSC from Sayma Shahjahan Academy, Kendua, Netrokona.
         </p>
       </div>
 
       <div className="p-10" data-aos="fade-up">
         <h1 className="text-slate-400 LG:text-2xl p-4 py-10 font-bold text-center">
-          <span
-            className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md"
-            data-aos="fade-right"
-          >
-            Learning Process
+          <span className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md">
+            My skills
           </span>
         </h1>
         <p className="text-lg" data-aos="fade-left">
-          I am studing at inter first year in Abu Abbas Collage Netrokona. I
-          have completed SSC from Sayma Shahjahan Academy, Kendua, Netrokona.
+          Professionally I am a proggramer about web and app developer. I Have
+          learned HTML, CSS, Bootstrap, Tailwind css, Javascript, Reactjs,
+          Nextjs, Nodejs, Firebase, Flutter, Python and i have knoladge about
+          data stucture and algoritham.
+        </p>
+      </div>
+
+      <div className="p-10" data-aos="fade-up">
+        <h1 className="text-slate-400 LG:text-2xl p-4 py-10 font-bold text-center">
+          <span className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md">
+            My experience
+          </span>
+        </h1>
+        <p className="text-lg" data-aos="fade-left">
+          I have 2 years of experience about proggraming and I have developed
+          some projects of production feild Yopu can check{" "}
+          <Link className="text-slate-500" href={"/project"}>
+            here
+          </Link>
+          . And i have work with some project as well.
+        </p>
+      </div>
+
+      <div className="p-10" data-aos="fade-up">
+        <h1 className="text-slate-400 LG:text-2xl p-4 py-10 font-bold text-center">
+          <span className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md">
+            Ability
+          </span>
+        </h1>
+        <p className="text-lg" data-aos="fade-left">
+          I am available for waork now on place or from home.
         </p>
       </div>
     </>
