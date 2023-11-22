@@ -8,9 +8,9 @@ export default function Hero() {
   return (
     <>
       <div className="">
-        <div className="flex p-10 py-20">
+        <div className="lg:flex p-10 py-20">
           <div
-            className="w-4/12 lg:block hidden m-10 text-center"
+            className="w-12/12 lg:block m-10 text-center"
             data-aos="fade-right"
           >
             <img
@@ -20,7 +20,10 @@ export default function Hero() {
             />
           </div>
 
-          <div className="lg:w-8/12 w-full lg:p-20 p-10" data-aos="fade-left">
+          <div
+            className="lg:w-8/12 w-12/12 lg:p-20 p-10 px-0"
+            data-aos="fade-left"
+          >
             <h1
               className="lg:text-5xl text-4xl lg:pb-10 pb-5 font-bold text-white"
               data-aos="fade-up"
