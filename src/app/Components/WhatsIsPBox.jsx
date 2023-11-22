@@ -8,7 +8,7 @@ export default function WhatsIsPBox({ image, header, description }) {
     <div>
       <>
         <div
-          className="text-center flex items-center bg-slate-900 p-10"
+          className="text-center lg:flex lg:items-center bg-slate-950 p-10"
           data-aos="fade-bottom"
         >
           <div className="lg:w-6/12">
@@ -25,7 +25,7 @@ export default function WhatsIsPBox({ image, header, description }) {
               Learn More
             </button>
           </div>
-          <div className="lg:w-6/12 p-10">
+          <div className="lg:w-6/12 lg:p-10 lg:py-10 py-5">
             <img src={image} className="block w-full" alt="" />
           </div>
         </div>

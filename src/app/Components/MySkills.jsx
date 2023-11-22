@@ -8,8 +8,8 @@ import MiniBox from "./MiniBox";
 export default function MySkills() {
   return (
     <>
-      <div className="backdrop-blur-3xl w-10/12 m-auto my-20 p-10">
-        <h1 className="text-slate-400 LG:text-2xl p-4 py-10 font-bold text-center">
+      <div className="backdrop-blur-3xl lg:w-10/12 m-auto my-20 lg:p-10">
+        <h1 className="text-slate-400 LG:text-2xl lg:p-4 py-10 font-bold text-center">
           <span
             className="border border-slate-600 hover:bg-slate-500 py-2 px-4 border-b-8 border-r-4 rounded-md"
             data-aos="fade-right"

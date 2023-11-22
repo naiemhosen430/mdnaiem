@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 export default function CompleteProject({ name, image, header, optionsp }) {
   const [pInfo, setPInfo] = useState({
     name: "",
-    image: "",
+    image: "/",
     header: "",
     optionsp: [],
   });

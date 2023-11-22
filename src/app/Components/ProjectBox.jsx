@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function ProjectBox({ projectname, image, description }) {
   const [pInfo, setPInfo] = useState({
     projectname: "",
-    image: "",
+    image: "/",
     description: "",
   });
 

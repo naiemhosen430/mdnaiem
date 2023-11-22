@@ -14,7 +14,7 @@ export default function FullSection({ image, header, description }) {
   return (
     <>
       <div
-        className="lg:w-11/12 m-auto bg-slate-900 lg:flex p-10"
+        className="lg:w-11/12 m-auto bg-slate-900 lg:flex lg:p-10"
         data-aos="fade-bottom"
       >
         <div className="lg:w-6/12 p-10" data-aos="fade-left">
