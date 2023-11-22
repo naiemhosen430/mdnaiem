@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function page() {
   return (
     <>
-      <div className="lg:flex p-10 lg:justify-center">
+      <div className="lg:flex p-10 pt-36 lg:justify-center">
         <div className="w-3/12 m-auto" data-aos="fade-up">
           <img
             className="lg:w-6/12 w-full m-auto block"
