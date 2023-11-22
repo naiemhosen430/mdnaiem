@@ -27,10 +27,7 @@ export default function ProjectBox({ projectname, image, description }) {
   }, []);
   return (
     <>
-      <div
-        className="lg:w-4/12 md:W-5/12 p-4 inline-block rounded-md"
-        data-aos="fade-left"
-      >
+      <div className="lg:w-4/12 md:W-5/12 p-4 inline-block rounded-md">
         <div className="bg-slate-950 hover:bg-slate-900">
           <div className="bg-slate-950" data-aos="fade-up">
             <iframe src={pInfo.image} width="100%" height="400"></iframe>

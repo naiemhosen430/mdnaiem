@@ -32,10 +32,7 @@ export default function CompleteProject({ name, image, header, optionsp }) {
     <>
       <div>
         <div className="p-10 lg:w-10/12 m-auto" data-aos="fade-up">
-          <h1
-            className="lg:text-4xl text-2xl text-slate-500 border-b-2 mb-5"
-            data-aos="fade-left"
-          >
+          <h1 className="lg:text-4xl text-2xl text-slate-500 border-b-2 mb-5">
             I have made <span className="text-white">{pInfo.name}</span>
           </h1>
           <p className="lg:text-xl text-lg" data-aos="fade-right">
