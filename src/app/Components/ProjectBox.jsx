@@ -33,7 +33,7 @@ export default function ProjectBox({ projectname, image, description }) {
       >
         <div className="bg-slate-950 hover:bg-slate-900">
           <div className="bg-slate-950" data-aos="fade-up">
-            {/* <iframe src={pInfo.image} width="100%" height="400"></iframe> */}
+            <iframe src={pInfo.image} width="100%" height="400"></iframe>
           </div>
           <Link href={pInfo.image}>
             <div className="p-4">
@@ -41,7 +41,6 @@ export default function ProjectBox({ projectname, image, description }) {
                 className="text-2xl py-2 text-white font-bold"
                 data-aos="fade-left"
               >
-                
                 {pInfo.projectname}
               </h1>
               <p className="text-slate-500" data-aos="fade-right">

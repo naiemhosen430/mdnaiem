@@ -41,7 +41,7 @@ export default function CompleteProject({ name, image, header, optionsp }) {
           <p className="lg:text-xl text-lg" data-aos="fade-right">
             {pInfo.header}
           </p>
-          {/* <iframe src={pInfo.image} height="400" width="100%"></iframe> */}
+          <iframe src={pInfo.image} height="400" width="100%"></iframe>
           <div>
             <div className="w-full">
               {pInfo.optionsp.map((item) => (
