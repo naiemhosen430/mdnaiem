@@ -2,7 +2,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import ProjectBox from "./Box/ProjectBox";
+import ProjectBox from "./ProjectBox";
 
 export default function MyProject() {
   useEffect(() => {

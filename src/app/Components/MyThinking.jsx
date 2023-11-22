@@ -1,5 +1,5 @@
 import React from "react";
-import FullSection from "./Box/FullSection";
+import FullSection from "./FullSection";
 
 export default function MyThinking() {
   return (

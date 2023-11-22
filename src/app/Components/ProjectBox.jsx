@@ -2,9 +2,23 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectBox({ projectname, image, description }) {
+  const [pInfo, setPInfo] = useState({
+    projectname: "",
+    image: "",
+    description: "",
+  });
+
+  useEffect(() => {
+    setPInfo({
+      projectname,
+      image,
+      description,
+    });
+  }, [image, description, projectname]);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -19,23 +33,19 @@ export default function ProjectBox({ projectname, image, description }) {
       >
         <div className="bg-slate-950 hover:bg-slate-900">
           <div className="bg-slate-950" data-aos="fade-up">
-            <iframe
-              src={image}
-              width="100%"
-              height="400"
-              frameborder="1"
-            ></iframe>
+            {/* <iframe src={pInfo.image} width="100%" height="400"></iframe> */}
           </div>
-          <Link href={image}>
+          <Link href={pInfo.image}>
             <div className="p-4">
               <h1
                 className="text-2xl py-2 text-white font-bold"
                 data-aos="fade-left"
               >
-                {projectname}
+                
+                {pInfo.projectname}
               </h1>
               <p className="text-slate-500" data-aos="fade-right">
-                {description}
+                {pInfo.description}
               </p>
             </div>
           </Link>
