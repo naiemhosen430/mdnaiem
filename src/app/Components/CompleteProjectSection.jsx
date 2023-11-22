@@ -1,5 +1,5 @@
 import React from "react";
-import CompleteProject from "./box/CompleteProject";
+import CompleteProject from "./Box/CompleteProject";
 
 export default function CompleteProjectSection() {
   return (

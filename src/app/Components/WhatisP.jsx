@@ -1,5 +1,5 @@
 import React from "react";
-import WhatsIsPBox from "./box/WhatsIsPBox";
+import WhatsIsPBox from "./Box/WhatsIsPBox";
 
 export default function WhatisP() {
   return (

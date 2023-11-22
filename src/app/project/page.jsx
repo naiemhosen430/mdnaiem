@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectBox from "../Components/box/ProjectBox";
+import ProjectBox from "../Components/Box/ProjectBox";
 
 export default function page() {
   return (

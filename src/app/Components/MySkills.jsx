@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import React from "react";
-import MiniBox from "./box/MiniBox";
+import MiniBox from "./Box/MiniBox";
 
 export default function MySkills() {
   return (
