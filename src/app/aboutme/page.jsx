@@ -4,12 +4,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function page() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   return (
     <>
       <div className="lg:flex p-10 lg:justify-center">
