@@ -2,7 +2,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Projectbox from "./Box/Projectbox";
+import ProjectBox from "./Box/ProjectBox";
 
 export default function MyProject() {
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function MyProject() {
           </span>
         </h1>
         <div className="space-2 text-center">
-          <Projectbox
+          <ProjectBox
             projectname={"E-commerce"}
             image={"https://ecommerce-rho-blush.vercel.app/"}
             description={
