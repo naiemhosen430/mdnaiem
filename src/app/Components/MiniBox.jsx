@@ -6,10 +6,7 @@ import { useEffect } from "react";
 export default function MiniBox({ HeaderName, description }) {
   return (
     <>
-      <div
-        className="lg:w-4/12 md:w-5/12 w-full m-auto text-left inline-block cursor-pointer p-4"
-        data-aos="fade-up"
-      >
+      <div className="lg:w-4/12 md:w-5/12 w-full m-auto text-left inline-block cursor-pointer p-4">
         <div className="hover:bg-slate-800 rounded-md shadow bg-slate-950 p-2">
           <h1
             className="text-2xl text-white p-4 font-bold"
