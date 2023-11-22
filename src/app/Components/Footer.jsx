@@ -14,19 +14,19 @@ export default function Footer() {
     <>
       <div className="p-10 bg-slate-950">
         <div className="flex items-center justify-center">
-          <Link href={"/"}>
+          <Link href={"https://web.facebook.com/naiemhosen430"}>
             <FaFacebookSquare className="text-3xl m-3" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://www.instagram.com/nhnaiem430"}>
             <FaInstagramSquare className="text-3xl m-3" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://www.linkedin.com/in/md-naiem-a1b222255"}>
             <FaLinkedin className="text-3xl m-3" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://github.com/naiemhosen430"}>
             <FaSquareGithub className="text-3xl m-3" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://www.youtube.com/@codewithnaiem"}>
             <TiSocialYoutube className="text-3xl m-3" />
           </Link>
         </div>

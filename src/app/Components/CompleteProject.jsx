@@ -40,7 +40,7 @@ export default function CompleteProject({ name, image, header, optionsp }) {
           </p>
           <iframe src={pInfo.image} height="400" width="100%"></iframe>
           <div>
-            <div className="w-full">
+            <div className="w-full p-5">
               {pInfo.optionsp.map((item) => (
                 <div className="space-x-2 inline-block w-6/12" key={item}>
                   <div className="flex items-center text-slate-400 font-bold">
