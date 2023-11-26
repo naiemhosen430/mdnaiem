@@ -148,7 +148,7 @@ export default function Page() {
           </div>
         </div>
       )}
-      <div className="lg:p-10 p-5 pt-52 h-screen">
+      <div className="lg:p-10 p-5 mt-52 h-screen">
         {elertFirst && (
           <div className="text-xs bg-slate-900 text-white font-bold text-center p-5">
             {elertMessage}
