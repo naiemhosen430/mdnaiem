@@ -4,7 +4,11 @@ import React, { useState } from "react";
 export default function Page() {
   const [cetagory, setCetagory] = useState(true);
   const [showName, setShowName] = useState(false);
+  const [personal, setPersonal] = useState(false);
+  const [des, setdes] = useState(false);
   const [feature, setFeature] = useState(false);
+  const [elertFirst, setAlertFirst] = useState(false);
+  const [elertMessage, setAlertMessage] = useState("");
   const [featureOptions, setFeatureOptions] = useState([
     "user",
     "admin",
@@ -15,12 +19,16 @@ export default function Page() {
     "chat",
     "video-audio-call",
     "contract-us/me",
-    "",
+    "cms",
   ]);
   const [formData, setFormData] = useState({
     category: "",
     name: "",
     featutes: [],
+    des: "",
+    fullname: "",
+    email: "",
+    phone: "",
   });
   console.log({ formData });
 
@@ -40,7 +48,44 @@ export default function Page() {
     } else {
       setCetagory(false);
       setShowName(false);
+      setdes(false);
       setFeature(true);
+    }
+  };
+  const showdesbox = () => {
+    if (formData.featutes.length === 0) {
+      setCetagory(false);
+      setFeature(true);
+    } else {
+      setCetagory(false);
+      setShowName(false);
+      setFeature(false);
+      setdes(true);
+    }
+  };
+  const showpersonalinfo = () => {
+    if (formData.des === "") {
+      setCetagory(false);
+      setdes(true);
+    } else {
+      setCetagory(false);
+      setShowName(false);
+      setFeature(false);
+      setPersonal(true);
+    }
+  };
+
+  const submit = () => {
+    if (
+      formData.email === "" ||
+      formData.phone === "" ||
+      formData.fullname === ""
+    ) {
+      setAlertFirst(true);
+      setAlertMessage("Fillup all field");
+    } else {
+      setAlertFirst(false);
+      console.log(formData);
     }
   };
 
@@ -66,6 +111,11 @@ export default function Page() {
   return (
     <>
       <div className="p-10 pt-52 h-screen">
+        {elertFirst && (
+          <div className="text-xs bg-slate-900 text-white font-bold text-center p-5">
+            {elertMessage}
+          </div>
+        )}
         {/* needfor */}
         {cetagory && (
           <div className="p-2">
@@ -93,6 +143,7 @@ export default function Page() {
                 <option value="news/portal">News/portal</option>
                 <option value="e-commerce">E-commarce</option>
                 <option value="app/website">App/website</option>
+                <option value="social-media">Social-media</option>
                 <option value="others">Others</option>
               </select>
             </div>
@@ -123,7 +174,7 @@ export default function Page() {
             </div>
             <div className="text-center p-10">
               <button
-                onClick={showfeaturebox}
+                onClick={showdesbox}
                 className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
                 Next
@@ -162,6 +213,86 @@ export default function Page() {
             <div className="text-center p-10">
               <button
                 onClick={showfeaturebox}
+                className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
+        {/* description */}
+        {des && (
+          <div className="p-2">
+            <div className="lg:flex lg:items-center lg:justify-center text-center">
+              <h1 className="lg:text-3xl text-white font-bold">
+                Write a short description about {formData.name}
+              </h1>
+            </div>
+            <input
+              type="text"
+              className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+              onChange={(event) =>
+                setFormData({ ...formData, des: event.target.value })
+              }
+            />
+            <div className="text-center p-10">
+              <button
+                onClick={showpersonalinfo}
+                className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
+        {/* personal */}
+        {personal && (
+          <div className="p-2">
+            <div className="p-2">
+              <div className="lg:flex lg:items-center lg:justify-center text-center">
+                <h1 className="lg:text-3xl text-white font-bold">
+                  Write your full name
+                </h1>
+              </div>
+              <input
+                type="text"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                onChange={(event) =>
+                  setFormData({ ...formData, fullname: event.target.value })
+                }
+              />
+            </div>
+            <div className="p-2">
+              <div className="lg:flex lg:items-center lg:justify-center text-center">
+                <h1 className="lg:text-3xl text-white font-bold">
+                  Write your email
+                </h1>
+              </div>
+              <input
+                type="text"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                onChange={(event) =>
+                  setFormData({ ...formData, email: event.target.value })
+                }
+              />
+            </div>
+            <div className="p-2">
+              <div className="lg:flex lg:items-center lg:justify-center text-center">
+                <h1 className="lg:text-3xl text-white font-bold">
+                  Write your phone number
+                </h1>
+              </div>
+              <input
+                type="text"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                onChange={(event) =>
+                  setFormData({ ...formData, phone: event.target.value })
+                }
+              />
+            </div>
+            <div className="text-center p-10">
+              <button
+                onClick={submit}
                 className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
                 Next
