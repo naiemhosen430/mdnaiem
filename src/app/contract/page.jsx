@@ -50,7 +50,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="lg:p-10 md:p-5 p-5 mt-32">
+      <div className="lg:p-10 md:p-5 p-5 mt-20">
         <h1 className="p-4 text-4xl text-center text-slate-500">
           Send me a message!
         </h1>
@@ -63,7 +63,7 @@ export default function Page() {
           <div className="p-20 fixed h-screen w-screen top-0 left-0 bg-slate-950 text-center">
             <div>
               <h1 className="text-white text-xl font-bold">{elertMessage}</h1>
-              <div className="text-center p-10">
+              <div className="text-center p-10 px-0">
                 <Link
                   href={"/"}
                   className="text-lg text-white bg-slate-800 p-2 px-8 rounded-xl block"
@@ -84,7 +84,7 @@ export default function Page() {
               Enter your full name
             </label>
             <input
-              className="lg:p-4 p-2 block w-full bg-slate-900 lg:px-6 px-3 text-lg text-white"
+              className=" p-2 block w-full bg-slate-900 px-3 text-lg text-white"
               id="fullName"
               placeholder="Full name"
               type="text"
@@ -101,7 +101,7 @@ export default function Page() {
               Enter your email
             </label>
             <input
-              className="lg:p-4 p-2 block w-full bg-slate-900 lg:px-6 px-3 text-lg text-white"
+              className=" p-2 block w-full bg-slate-900  px-3 text-lg text-white"
               id="email"
               placeholder="Email"
               type="email"
@@ -118,7 +118,7 @@ export default function Page() {
               Enter your message
             </label>
             <textarea
-              className="lg:p-4 block p-2 h-40 w-full bg-slate-900 lg:px-6 px-3 text-lg text-white"
+              className=" block p-2 h-40 w-full bg-slate-900 px-3 text-lg text-white"
               name="message"
               placeholder="Message"
               id="message"
@@ -129,7 +129,7 @@ export default function Page() {
 
           <div className="py-2 text-center">
             <button
-              className="p-4 inline-block bg-slate-800 rounded-md hover:bg-slate-400 hover:text-black px-6 text-lg text-white"
+              className="p-2 inline-block bg-slate-800 rounded-md hover:bg-slate-400 hover:text-black px-6 text-lg text-white"
               onClick={handleSendMessage}
             >
               Send Message
