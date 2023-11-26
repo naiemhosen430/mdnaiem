@@ -1,10 +1,13 @@
 "use client";
+import { createOrder } from "@/api/firebaseAction/createOrder";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Page() {
   const [cetagory, setCetagory] = useState(true);
   const [showName, setShowName] = useState(false);
   const [personal, setPersonal] = useState(false);
+  const [elert, setAlert] = useState(false);
   const [des, setdes] = useState(false);
   const [feature, setFeature] = useState(false);
   const [elertFirst, setAlertFirst] = useState(false);
@@ -43,9 +46,12 @@ export default function Page() {
   };
   const showfeaturebox = () => {
     if (formData.name === "") {
+      setAlertMessage("Website name is required!!");
+      setAlertFirst(true);
       setCetagory(false);
       setShowName(true);
     } else {
+      setAlertFirst(false);
       setCetagory(false);
       setShowName(false);
       setdes(false);
@@ -65,10 +71,14 @@ export default function Page() {
   };
   const showpersonalinfo = () => {
     if (formData.des === "") {
+      setAlertMessage("Website description is required!!");
+      setAlertFirst(true);
       setCetagory(false);
       setdes(true);
     } else {
       setCetagory(false);
+      setdes(false);
+      setAlertFirst(false);
       setShowName(false);
       setFeature(false);
       setPersonal(true);
@@ -85,6 +95,19 @@ export default function Page() {
       setAlertMessage("Fillup all field");
     } else {
       setAlertFirst(false);
+      try {
+        const data = createOrder(formData);
+        if (data === "ok") {
+          setAlert(true);
+          setAlertMessage("Thank you for Order. I will get you soon.");
+        } else {
+          setAlertFirst(true);
+          setAlertMessage("Something wents wrong!");
+        }
+      } catch (error) {
+        console.error("Error sending message:", error);
+        // Handle error cases if needed
+      }
       console.log(formData);
     }
   };
@@ -110,6 +133,21 @@ export default function Page() {
 
   return (
     <>
+      {elert && (
+        <div className="p-20 fixed h-screen w-screen top-0 left-0 bg-slate-950 text-center">
+          <div>
+            <h1 className="text-white text-xl font-bold">{elertMessage}</h1>
+            <div className="text-center p-10 px-0">
+              <Link
+                href={"/"}
+                className="text-lg text-white bg-slate-800 p-2 px-8 rounded-xl block"
+              >
+                Back to home
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="p-10 pt-52 h-screen">
         {elertFirst && (
           <div className="text-xs bg-slate-900 text-white font-bold text-center p-5">
@@ -166,6 +204,7 @@ export default function Page() {
               </h1>
               <input
                 type="text"
+                id="name"
                 className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
                 onChange={(event) =>
                   setFormData({ ...formData, name: event.target.value })
@@ -174,7 +213,7 @@ export default function Page() {
             </div>
             <div className="text-center p-10">
               <button
-                onClick={showdesbox}
+                onClick={showfeaturebox}
                 className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
                 Next
@@ -212,7 +251,7 @@ export default function Page() {
             </div>
             <div className="text-center p-10">
               <button
-                onClick={showfeaturebox}
+                onClick={showdesbox}
                 className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
                 Next
@@ -256,7 +295,9 @@ export default function Page() {
               </div>
               <input
                 type="text"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                id="fullname"
+                name="fullname"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
                 onChange={(event) =>
                   setFormData({ ...formData, fullname: event.target.value })
                 }
@@ -269,8 +310,10 @@ export default function Page() {
                 </h1>
               </div>
               <input
-                type="text"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                type="email"
+                id="email"
+                name="email"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
                 onChange={(event) =>
                   setFormData({ ...formData, email: event.target.value })
                 }
@@ -283,8 +326,10 @@ export default function Page() {
                 </h1>
               </div>
               <input
-                type="text"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                type="number"
+                id="phone"
+                name="phone"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
                 onChange={(event) =>
                   setFormData({ ...formData, phone: event.target.value })
                 }
@@ -295,7 +340,7 @@ export default function Page() {
                 onClick={submit}
                 className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
-                Next
+                Submit order
               </button>
             </div>
           </div>
