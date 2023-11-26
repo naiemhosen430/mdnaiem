@@ -148,7 +148,7 @@ export default function Page() {
           </div>
         </div>
       )}
-      <div className="p-10 pt-52 h-screen">
+      <div className="lg:p-10 p-5 pt-52 h-screen">
         {elertFirst && (
           <div className="text-xs bg-slate-900 text-white font-bold text-center p-5">
             {elertMessage}
@@ -205,7 +205,7 @@ export default function Page() {
               <input
                 type="text"
                 id="name"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
+                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 my-5"
                 onChange={(event) =>
                   setFormData({ ...formData, name: event.target.value })
                 }
@@ -297,7 +297,7 @@ export default function Page() {
                 type="text"
                 id="fullname"
                 name="fullname"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
+                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
                 onChange={(event) =>
                   setFormData({ ...formData, fullname: event.target.value })
                 }
@@ -313,7 +313,7 @@ export default function Page() {
                 type="email"
                 id="email"
                 name="email"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
+                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
                 onChange={(event) =>
                   setFormData({ ...formData, email: event.target.value })
                 }
@@ -329,16 +329,16 @@ export default function Page() {
                 type="number"
                 id="phone"
                 name="phone"
-                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-10"
+                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
                 onChange={(event) =>
                   setFormData({ ...formData, phone: event.target.value })
                 }
               />
             </div>
-            <div className="text-center p-10">
+            <div className="text-center py-10">
               <button
                 onClick={submit}
-                className="p-4 px-6 text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
+                className="p-4 px-6 lg:text-2xl bg-slate-900 text-white font-bold rounded-xl shadow-lg"
               >
                 Submit order
               </button>
