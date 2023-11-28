@@ -228,11 +228,13 @@ export default function Page() {
               <h1 className="lg:text-3xl text-white font-bold">
                 My {formData.name}'s features will be
               </h1>
+            </div>
+            <div className="p-10 text-center">
               {featureOptions.map((item) => (
                 <>
                   <label
                     key={item}
-                    className={` inline-block rounded-3xl p-1 text-xs px-3 ${
+                    className={` inline-block rounded-3xl p-1 text-xs px-3 m-2 w-40 ${
                       selectedOptions.includes(item)
                         ? "bg-slate-800"
                         : "bg-red-500 "
@@ -266,14 +268,14 @@ export default function Page() {
               <h1 className="lg:text-3xl text-white font-bold">
                 Write a short description about {formData.name}
               </h1>
+              <input
+                type="text"
+                className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 my-10"
+                onChange={(event) =>
+                  setFormData({ ...formData, des: event.target.value })
+                }
+              />
             </div>
-            <input
-              type="text"
-              className="inline-block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 m-10"
-              onChange={(event) =>
-                setFormData({ ...formData, des: event.target.value })
-              }
-            />
             <div className="text-center p-10">
               <button
                 onClick={showpersonalinfo}
@@ -288,52 +290,52 @@ export default function Page() {
         {personal && (
           <div className="p-2">
             <div className="p-2">
-              <div className="lg:flex lg:items-center lg:justify-center text-center">
-                <h1 className="lg:text-3xl text-white font-bold">
+              <div className="lg:flex lg:items-center lg:justify-center m-auto">
+                <h1 className="lg:text-3xl lg:w-6/12 text-white font-bold">
                   Write your full name
                 </h1>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
+                  onChange={(event) =>
+                    setFormData({ ...formData, fullname: event.target.value })
+                  }
+                />
               </div>
-              <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
-                onChange={(event) =>
-                  setFormData({ ...formData, fullname: event.target.value })
-                }
-              />
             </div>
             <div className="p-2">
-              <div className="lg:flex lg:items-center lg:justify-center text-center">
-                <h1 className="lg:text-3xl text-white font-bold">
+              <div className="lg:flex lg:items-center lg:justify-center m-auto">
+                <h1 className="lg:text-3xl lg:w-6/12 text-white font-bold">
                   Write your email
                 </h1>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
+                  onChange={(event) =>
+                    setFormData({ ...formData, email: event.target.value })
+                  }
+                />
               </div>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
-                onChange={(event) =>
-                  setFormData({ ...formData, email: event.target.value })
-                }
-              />
             </div>
             <div className="p-2">
-              <div className="lg:flex lg:items-center lg:justify-center text-center">
-                <h1 className="lg:text-3xl text-white font-bold">
+              <div className="lg:flex lg:items-center lg:justify-center m-auto">
+                <h1 className="lg:text-3xl lg:w-6/12 text-white font-bold">
                   Write your phone number
                 </h1>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
+                  onChange={(event) =>
+                    setFormData({ ...formData, phone: event.target.value })
+                  }
+                />
               </div>
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                className="block p-2 bg-black text-white border rounded-lg px-4 lg:m-4 mx-5"
-                onChange={(event) =>
-                  setFormData({ ...formData, phone: event.target.value })
-                }
-              />
             </div>
             <div className="text-center py-10">
               <button

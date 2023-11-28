@@ -3,20 +3,20 @@ import { NextResponse } from "next/server";
 
 export function middleware(request) {
   const path = request.nextUrl.pathname;
-  const isPublicPath = path === "/login";
+  const isPublicPath = ["/login"].includes(path);
+
   const cookieStore = cookies();
   const accessToken = cookieStore.get("accesstoken");
-  console.log(accessToken);
 
-  if (!isPublicPath && accessToken === "undefined") {
+  if (!isPublicPath && !accessToken) {
     return NextResponse.redirect(new URL("/login", request.nextUrl));
   }
+
   if (isPublicPath && accessToken) {
     return NextResponse.redirect(new URL("/dashboad", request.nextUrl));
   }
-}77
+}
 
-// See "Matching Paths" below to learn more
 export const config = {
-  matcher: ["/", "/login"],
+  matcher: ["/dashboad", "/login", "/build/website"],
 };

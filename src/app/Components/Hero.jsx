@@ -34,9 +34,9 @@ export default function Hero() {
               </Link>
               <Link
                 className="text-white text-center m-4 lg:py-4 py-2 block w-full lg:w-6/12 hover:bg-slate-800 px-8 lg:text-2xl border border-yellow-700 rounded-md"
-                href={"/build/website"}
+                href={"/build"}
               >
-                Need a website?
+                Need help?
               </Link>
             </div>
           </div>
