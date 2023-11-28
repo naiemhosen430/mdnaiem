@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Menu from "./Components/Menu";
 import Footer from "./Components/Footer";
+import { UserAuthContextProvider } from "./Context/UseAuthContext.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="w-screen overflow-x-hidden">
-          <Menu />
-          {children}
-          <Footer />
+          <UserAuthContextProvider>
+            <Menu />
+            {children}
+            <Footer />
+          </UserAuthContextProvider>
         </div>
       </body>
     </html>
