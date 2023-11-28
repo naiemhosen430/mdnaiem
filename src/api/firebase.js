@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getDatabase } from "firebase/database";
+import { getDatabase, ref } from "firebase/database";
 import { createUser } from "./firebaseAction/createUser";
 import Cookies from "js-cookie";
 
@@ -36,8 +36,10 @@ export const gooogleSignUpHundler = () => {
 
       onValue(userCollectionRef, (snapshot) => {
         const mydata = snapshot.val();
+        console.log({ mydata });
 
         if (!mydata) {
+          console.log("no");
           const user = {
             name: data.user.displayName,
             _id: data.user.uid,
@@ -57,6 +59,7 @@ export const gooogleSignUpHundler = () => {
 
           createUser(user);
         } else {
+          console.log("yes");
         }
       });
 
