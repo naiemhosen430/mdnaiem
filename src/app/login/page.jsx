@@ -20,7 +20,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="p-20 mt-32 m-auto lg:w-6/12 text-center">
+      <div className="lg:p-20 py-20 p-2 mt-32 m-auto lg:w-6/12 w-12/12 text-center">
         <div
           onClick={signupWithGoogleHandler}
           className="flex items-center justify-center space-x-5 p-2 px-8 rounded-xl shadow-xl bg-slate-300 text-black font-bold text-2xl"
