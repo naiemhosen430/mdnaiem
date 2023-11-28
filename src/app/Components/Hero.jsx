@@ -3,8 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import { useEffect } from "react";
+import { useUserAuth } from "../Context/UseAuthContext";
 
 export default function Hero() {
+  const { user } = useUserAuth();
+  console.log({ user });
   const commingSoon = () => {
     alert(" this feature is comming soon");
   };
