@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ProjectBox from "./ProjectBox";
 import apppresentation from "src/app/assets/appresentation.jpg";
+import mnbet from "src/app/assets/mnbet.jpg";
 
 export default function MyProject() {
   useEffect(() => {
@@ -49,11 +50,11 @@ export default function MyProject() {
             }
           />
           <ProjectBox
-            projectname={"Agency two"}
-            link={"https://agencytwo.vercel.app/"}
-            image={""}
+            projectname={"MNBet"}
+            link={"https://mnbet.vercel.app/"}
+            image={mnbet}
             description={
-              "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+              "This is a online betting website made by next js tailwind css, firebase."
             }
           />
           <ProjectBox
