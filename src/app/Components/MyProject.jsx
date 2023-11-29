@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ProjectBox from "./ProjectBox";
+import apppresentation from "src/app/assets/appresentation.jpg";
 
 export default function MyProject() {
   useEffect(() => {
@@ -25,42 +26,48 @@ export default function MyProject() {
         <div className="space-2 text-center">
           <ProjectBox
             projectname={"E-commerce"}
-            image={"https://ecommerce-rho-blush.vercel.app/"}
+            link={"https://ecommerce-rho-blush.vercel.app/"}
+            image={""}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"E-commerce two"}
-            image={"https://ecommercenaiem.vercel.app/"}
+            link={"https://ecommercenaiem.vercel.app/"}
+            image={""}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Agency"}
-            image={"https://agencyone.vercel.app/"}
+            link={"https://agencyone.vercel.app/"}
+            image={""}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Agency two"}
-            image={"https://agencytwo.vercel.app/"}
+            link={"https://agencytwo.vercel.app/"}
+            image={""}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"Personal"}
-            image={"https://personal-six-sable.vercel.app/"}
+            link={"https://personal-six-sable.vercel.app/"}
+            image={""}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
           />
           <ProjectBox
             projectname={"App presention"}
-            image={"https://app-presentation.vercel.app/"}
+            link={"https://app-presentation.vercel.app/"}
+            image={apppresentation}
             description={
               "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
             }
