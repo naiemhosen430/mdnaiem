@@ -1,11 +1,16 @@
 import React from "react";
 import ProjectBox from "../Components/ProjectBox";
 import apppresentation from "src/app/assets/appresentation.jpg";
+import mnbet from "src/app/assets/mnbet.jpg";
+import personal from "src/app/assets/personal.jpg";
+import ecommerce from "src/app/assets/ecommerce.jpg";
+import ecommercetwo from "src/app/assets/ecommercetwo.jpg";
+import topranking from "src/app/assets/topranking.jpg";
 
 export default function page() {
   return (
     <>
-      <div className="lg:p-10 pt-32">
+      <div className="lg:p-10 mt-20">
         <h1 className="p-4 text-4xl text-slate-500">I have made for you!</h1>
         <div className="p-10 backdrop-blur-3xl m-auto lg:w-10/12 w-full">
           <h1 className="text-slate-400 LG:text-2xl p-4 py-5 mb-5 font-bold text-center">
@@ -20,15 +25,23 @@ export default function page() {
             <ProjectBox
               projectname={"E-commerce"}
               link={"https://ecommerce-rho-blush.vercel.app/"}
-              image={""}
+              image={ecommerce}
               description={
                 "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
               }
             />
             <ProjectBox
+              projectname={"Top ranking"}
+              link={"https://ecommerce-rho-blush.vercel.app/"}
+              image={topranking}
+              description={
+                "This is a top ranking website made by next js tailwind css, node js and mongoDb."
+              }
+            />
+            <ProjectBox
               projectname={"E-commerce two"}
               link={"https://ecommercenaiem.vercel.app/"}
-              image={""}
+              image={ecommercetwo}
               description={
                 "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
               }
@@ -42,17 +55,17 @@ export default function page() {
               }
             />
             <ProjectBox
-              projectname={"Agency two"}
-              link={"https://agencytwo.vercel.app/"}
-              image={""}
+              projectname={"MNBet"}
+              link={"https://mnbet.vercel.app/"}
+              image={mnbet}
               description={
-                "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
+                "This is a online betting website made by next js tailwind css, firebase."
               }
             />
             <ProjectBox
               projectname={"Personal"}
               link={"https://personal-six-sable.vercel.app/"}
-              image={""}
+              image={personal}
               description={
                 "This is a E-commerce website made by next js tailwind css, node js and mongoDb."
               }

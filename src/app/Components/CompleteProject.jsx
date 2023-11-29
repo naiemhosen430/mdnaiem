@@ -3,11 +3,19 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
-export default function CompleteProject({ name, image, header, optionsp }) {
+export default function CompleteProject({
+  name,
+  link,
+  image,
+  header,
+  optionsp,
+}) {
   const [pInfo, setPInfo] = useState({
     name: "",
     image: "/",
+    link,
     header: "",
     optionsp: [],
   });
@@ -16,10 +24,11 @@ export default function CompleteProject({ name, image, header, optionsp }) {
     setPInfo({
       name,
       image,
+      link,
       header,
       optionsp,
     });
-  }, [name, image, header, optionsp]);
+  }, [name, image, link, header, optionsp]);
 
   useEffect(() => {
     AOS.init({
@@ -38,7 +47,13 @@ export default function CompleteProject({ name, image, header, optionsp }) {
           <p className="lg:text-xl text-lg" data-aos="fade-right">
             {pInfo.header}
           </p>
-          <iframe src={pInfo.image} height="400" width="100%"></iframe>
+          <Image
+            className="w-full block"
+            src={pInfo.image}
+            width={0}
+            height={0}
+            alt="no image found"
+          />
           <div>
             <div className="w-full p-5">
               {pInfo.optionsp.map((item) => (
@@ -59,7 +74,7 @@ export default function CompleteProject({ name, image, header, optionsp }) {
           <Link
             data-aos="fade-up"
             className="block p-2 bg-slate-900 hover:bg-slate-800 rounded-md text-yellow-600 text-center"
-            href={pInfo.image}
+            href={pInfo.link}
           >
             Visit {pInfo.name}
           </Link>
