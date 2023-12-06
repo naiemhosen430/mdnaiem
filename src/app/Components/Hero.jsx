@@ -77,20 +77,20 @@ export default function Hero() {
         </div>
         <div className="lg:flex lg:items-center lg:justify-center mb-10 text-center">
           <h1 className="p-5 px-10 m-5 bg-slate-950 text-2xl rounded-xl shadow-2xl">
-            <h1>0</h1>
+            <h1>5+</h1>
             <h1 className="text-sm p-2 text-slate-600">Project completed</h1>
           </h1>
           <h1 className="p-5 px-10 m-5 bg-slate-950 text-2xl rounded-xl shadow-2xl">
-            <h1>0</h1>
-            <h1 className="text-sm p-2 text-slate-600">Project completed</h1>
+            <h1>20+</h1>
+            <h1 className="text-sm p-2 text-slate-600">Portfolio projects</h1>
           </h1>
           <h1 className="p-5 px-10 m-5 bg-slate-950 text-2xl rounded-xl shadow-2xl">
-            <h1>0</h1>
-            <h1 className="text-sm p-2 text-slate-600">Project completed</h1>
+            <h1>6+</h1>
+            <h1 className="text-sm p-2 text-slate-600">Clients</h1>
           </h1>
           <h1 className="p-5 px-10 m-5 bg-slate-950 text-2xl rounded-xl shadow-2xl">
-            <h1>0</h1>
-            <h1 className="text-sm p-2 text-slate-600">Project completed</h1>
+            <h1>3</h1>
+            <h1 className="text-sm p-2 text-slate-600">Current projects</h1>
           </h1>
         </div>
         <p className="p-10 pt-0 text-white text-xl">
