@@ -93,11 +93,6 @@ export default function Hero() {
             <h1 className="text-sm p-2 text-slate-600">Current projects</h1>
           </h1>
         </div>
-        <p className="p-10 pt-0 text-white text-xl">
-          If you want to acieeve something then start work ffrom now. If you
-          Want to make your future bright then make money from now. Always be
-          today not later and tomorrow.
-        </p>
         <div className="lg:p-20 py-20 p-5 pt-32 text-center">
           <div className="lg:w-3/12 w- bg-slate-900 rounded-xl shadow-xl p-5 inline-block m-5">
             <h1 className="text-2xl text-white p-2 font-bold">
