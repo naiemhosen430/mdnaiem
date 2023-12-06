@@ -61,13 +61,13 @@ export default function Hero() {
             </p>
             <div className="lg:flex lg:items-center py-5">
               <Link
-                className="text-white m-4 text-center lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-xl border border-yellow-700 rounded-md"
+                className="text-white my-4 lg:mr-5 text-center lg:py-4 py-2 block w-full lg:w-4/12 hover:bg-slate-800 px-8 lg:text-xl border border-yellow-700 rounded-md"
                 href={"/aboutme"}
               >
                 About Me
               </Link>
               <Link
-                className="text-white text-center m-4 lg:py-4 py-2 block w-full lg:w-6/12 hover:bg-slate-800 px-8 lg:text-xl border border-yellow-700 rounded-md"
+                className="text-white text-center my-4 lg:py-4 py-2 block w-full lg:w-6/12 hover:bg-slate-800 px-8 lg:text-xl border border-yellow-700 rounded-md"
                 href={"/build"}
               >
                 Need help?
