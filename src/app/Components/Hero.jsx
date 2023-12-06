@@ -1,10 +1,44 @@
 "use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const text = [
+    "web developer...",
+    "programmer....",
+    "mobile app developer...",
+    "full-stack developer...",
+    "javascript developer...",
+    "python developer...",
+  ];
   const commingSoon = () => {
     alert(" this feature is comming soon");
   };
+
+  const [displayText, setDisplayText] = useState("");
+  const [chunkIndex, setChunkIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const currentText = text[chunkIndex];
+    const typingInterval = setInterval(() => {
+      if (currentIndex < currentText.length) {
+        setDisplayText((prevText) => prevText + currentText[currentIndex]);
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        clearInterval(typingInterval);
+
+        setTimeout(() => {
+          setDisplayText("");
+          setCurrentIndex(0);
+
+          setChunkIndex((prevIndex) => (prevIndex + 1) % text.length);
+        }, 500);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, [chunkIndex, currentIndex]);
+
   return (
     <>
       <div className="">
@@ -23,7 +57,7 @@ export default function Hero() {
               MD Naiem
             </h1>
             <p className="text-slate-400 font-bold text-xl lg:text-3xl py-2 lg:py-5">
-              I am a web developer and programmer
+              I am {displayText}
             </p>
             <div className="lg:flex lg:items-center py-10">
               <Link

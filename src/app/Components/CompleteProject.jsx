@@ -44,7 +44,10 @@ export default function CompleteProject({
           <h1 className="lg:text-4xl text-2xl text-slate-500 border-b-2 mb-5">
             I have made <span className="text-white">{pInfo.name}</span>
           </h1>
-          <p className="lg:text-xl text-lg" data-aos="fade-right">
+          <p
+            className="lg:text-xl text-slate-500 pb-5 text-lg"
+            data-aos="fade-right"
+          >
             {pInfo.header}
           </p>
           <Image

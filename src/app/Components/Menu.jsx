@@ -24,6 +24,12 @@ export default function Menu() {
           <div className="lg:w-10/12 hidden lg:block text-center">
             <ul className="pt-2 space-x-8">
               <Link
+                href={"/dashboad"}
+                className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
+              >
+                Dashboad
+              </Link>
+              <Link
                 href={"/aboutme"}
                 className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
               >
@@ -39,7 +45,7 @@ export default function Menu() {
                 href={"/clientreview"}
                 className="text-slate-500 rounded-full border border-red-400 py-1 px-4"
               >
-                My Client Reviews
+                Client Reviews
               </Link>
               <Link
                 href={"https://github.com/naiemhosen430"}
@@ -67,6 +73,13 @@ export default function Menu() {
             <ul className="pt-2 space-y-4 p-5">
               <Link
                 onClick={toggleMenu}
+                href={"/dashboad"}
+                className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
+              >
+                Dashboad
+              </Link>
+              <Link
+                onClick={toggleMenu}
                 href={"/aboutme"}
                 className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
               >
@@ -84,7 +97,7 @@ export default function Menu() {
                 href={"/clientreview"}
                 className="text-slate-500 rounded-full border border-red-400 py-1 px-4 block hover:bg-slate-600"
               >
-                My Client Reviews
+                Client Reviews
               </Link>
 
               <div className="text-center py-10">

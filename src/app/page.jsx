@@ -5,6 +5,7 @@ import MyThinking from "./Components/MyThinking";
 import MyProject from "./Components/MyProject";
 import CompleteProjectSection from "./Components/CompleteProjectSection";
 import WhatisP from "./Components/WhatisP";
+import ContractSection from "./Components/ContractSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <MyProject />
         <CompleteProjectSection />
         <WhatisP />
+        <ContractSection />
       </>
     </>
   );
